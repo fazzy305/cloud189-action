@@ -40,12 +40,12 @@ def main():
     else:
         description = response.json()['description']
         print(f"抽奖获得{description}")
-    response = s.get(url2,headers=headers)
-    if ("errorCode" in response.text):
-        print(response.text)
-    else:
-        description = response.json()['description']
-        print(f"抽奖获得{description}")
+    #response = s.get(url2,headers=headers)
+    #if ("errorCode" in response.text):
+        #print(response.text)
+    #else:
+        #描述 = response.json()['description']
+        #print(f"抽奖获得{描述}")
 
 BI_RM = list("0123456789abcdefghijklmnopqrstuvwxyz")
 def int2char(a):
